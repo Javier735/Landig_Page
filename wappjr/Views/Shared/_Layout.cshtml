@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - wappjr</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/wappjr.styles.css" asp-append-version="true" />  
+   <style>
+        /* BackToTop button css */
+        #scroll {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            background-color: #BBCBD8;
+            text-indent: -9999px;
+            display: none;
+            -webkit-border-radius: 60px;
+            -moz-border-radius: 60px;
+            border-radius: 60px;
+            z-index: 999;
+        }
+
+            #scroll span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -8px;
+                margin-top: -12px;
+                height: 0;
+                width: 0;
+                border: 8px solid transparent;
+                border-bottom-color: #ffffff;
+             
+            }
+
+            #scroll:hover {
+                background-color: #e74c3c;
+                opacity: 1;
+                filter: "alpha(opacity=100)";
+                -ms-filter: "alpha(opacity=100)";
+            }
+   </style>
+</head>
+<body>  
+    <header>        
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3 fixed-top">
+            <div class="container">
+                <a class="navbar-brand fs-3" asp-area="" asp-controller="Home" asp-action="Index">wappjr</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div style="margin-top: 70px;">
+        <main role="main" class="pb-3">
+            <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - wappjr - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>  
+    @await RenderSectionAsync("Scripts", required: false)  
+  <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#scroll').fadeIn();
+                } else {
+                    $('#scroll').fadeOut();
+                }
+            });
+            $('#scroll').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 300);
+                return false;
+            });
+        });
+  </script>
+</body>
+</html>
