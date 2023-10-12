@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JavierR\\source\\repos\\wappjr\\wappjr\\wappjr.csproj": {}
+    "C:\\Users\\LENOVO\\Documents\\Proyectos\\landingpage\\Landig_Page\\wappjr\\wappjr.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JavierR\\source\\repos\\wappjr\\wappjr\\wappjr.csproj": {
+    "C:\\Users\\LENOVO\\Documents\\Proyectos\\landingpage\\Landig_Page\\wappjr\\wappjr.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JavierR\\source\\repos\\wappjr\\wappjr\\wappjr.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\Proyectos\\landingpage\\Landig_Page\\wappjr\\wappjr.csproj",
         "projectName": "wappjr",
-        "projectPath": "C:\\Users\\JavierR\\source\\repos\\wappjr\\wappjr\\wappjr.csproj",
-        "packagesPath": "C:\\Users\\JavierR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JavierR\\source\\repos\\wappjr\\wappjr\\obj\\",
+        "projectPath": "C:\\Users\\LENOVO\\Documents\\Proyectos\\landingpage\\Landig_Page\\wappjr\\wappjr.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO\\Documents\\Proyectos\\landingpage\\Landig_Page\\wappjr\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\JavierR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -88,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
